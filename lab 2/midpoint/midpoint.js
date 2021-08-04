@@ -1,15 +1,17 @@
 //this is the algorithm for
 //Midpoint Line Drawing
 //Algorothim
-function draw() {
+function setup(){
     createCanvas(700, 700);
     background(255,255,100);
     textSize(24);
     fill(0, 102, 153);
-    text('This is the output of Midpoint LDA',10,30);
+    text('This is the output of Midpoint Algorothim',10,30);
+    draw(70,70,550,600);
+    draw(200,350,600,150);
 
-    let x1 = 70, y1 = 70, x2 = 550, y2 = 600;
-
+}
+function draw(x1,y1,x2,y2) {
     const dx = x2 - x1;
     const dy = y2 - y1;
     const m = dy / dx;

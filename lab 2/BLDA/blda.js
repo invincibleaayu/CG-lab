@@ -1,14 +1,19 @@
 //this is the algorithm for
 //Bresenham Line Drawing
 //Algorothim
-
-function draw() {
+function setup(){
     createCanvas(700, 700);
     background(255,255,100);
     textSize(24);
     fill(0, 102, 153);
     text('This is the output of Bresenham Algorothim',10,30);
-    let x1 = 50, y1 = 55, x2 = 400, y2 = 410;
+    draw(100,110,400,350);
+    draw(400,350,600,150);
+
+}
+
+function draw(x1,y1,x2,y2) {
+
     const dx = x2 - x1;
     const dy = y2 - y1;
     const m = dy / dx;
